@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<title>Mark Bosco's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./resources/MBFavicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;}
+    p{color:white;font-size:1.3em;}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+    #sideMenu::-webkit-scrollbar{
+
+    display: none; /* for Chrome, Safari, and Opera */
+    }
+</style>
+<body class="w3-black">
+
+<!-- Icon Bar (Sidebar - hidden on small screens) -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center" id='sideMenu'>
+  <!-- Avatar image in top left corner -->
+  <img src="./resources/MBLogoWhite.png" style="width:70%;margin-top:10px;margin-bottom:10px;">
+  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>ABOUT</p>
+  </a>
+  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><b>Mark Bosco</b></h1>
+    <p>Cybersecurity Professional</p>
+    <img src="./resources/MB_Hero.gif" alt="Mark Bosco" class="w3-image" style="max-width:75vh;height:auto;margin-top:30px;">
+  </header>
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2 class="w3-text-light-grey">About</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Hi, I'm Mark Bosco, a cybersecurity professional with a passion for helping others.<br><br>I have just completed my full-time national service, where I served in a cybersecurity-related vocation under the CyberNSF scheme. Before that, I recieved my diploma in Cybersecurity and Digital Forensics from Nanyang Polytechnic.<br><br>Right now, I'm looking for a challenging new role to further my career.
+<hr style="width:200px" class="w3-opacity">
+    </p>
+    <h3 class="w3-padding-16 w3-text-light-grey">Skills and Knowledge</h3>
+    
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:30px;width:85%"><p class="w3-wide">&nbsp;Computer Programming</p></div>
+    </div>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:30px;width:60%"><p class="w3-wide">&nbsp;Malware Analysis</p></div>
+    </div>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:30px;width:80%"><p class="w3-wide">&nbsp;Database Security</p></div>
+    </div>
+
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:30px;width:90%"><p class="w3-wide">&nbsp;Firewall Management</p></div>
+    </div>
+
+    <div class="w3-white">
+      <div class="w3-grey" style="height:30px;width:99%"><p class="w3-wide" style="color:black">&nbsp;Writing</p></div>
+    </div>
+
+    <div class="w3-white">
+      <div class="w3-grey" style="height:30px;width:78%"><p class="w3-wide" style="color:black">&nbsp;Public Speaking</p></div>
+    </div><br>
+   
+
+    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+        <i class="fa fa-download"></i><a href="/resources/resume" download style="text-decoration:none;"> Download Resume</a>
+    </button>
+    
+  
+    </div>
+    <div class="w3-padding-64 w3-content" id="testimonial">
+    <!-- Testimonials -->
+    <h3 class="w3-padding-24 w3-text-light-grey">Testimonials</h3>  
+    <img src="./resources/Joseph_Testimonial.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Joseph Poon.</span> Former Colleague</p><br>
+    <p>"Mark is probably one of the sharpest people in the field of cybersecurity.<br>He shows initiative when seeking out new skills and learning opportunities."</p><br>
+    
+    <img src="./resources/Aden_Testimonial.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
+    <p><span class="w3-large w3-margin-right">Aden Seow.</span> Former Colleague</p><br>
+    <p>"Mark is a hardworking, commendable person. He is very knowledgeable and will always do his best for all assigned tasks. He is also a responsible and caring team leader, who will always check on his team members' progress and willing to offer his help should they encounter any difficulties.<br>Working with Mark on several projects has always been a pleasure."</p>
+  <!-- End About Section -->
+  </div>
+  
+  <!-- Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="photos">
+    <h2 class="w3-text-light-grey">Projects</h2>
+    <hr style="width:200px" class="w3-opacity">
+  <!-- Grid for pricing tables -->
+
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-third w3-margin-bottom">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Technical Project</li>
+                        <h3>WorldSkills Singapore</h3>
+            <li><span class="w3-opacity" >Cybersecurity Competition</span></li>
+          <li class="w3-padding-16">Network Security</li>
+          <li class="w3-padding-16">Malware Analysis</li>
+          <li class="w3-padding-16">Blue Team Operations</li>
+          <li class="w3-padding-16">Governance and Auditing</li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Explore</button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Technical Project</li>
+                        <h3>NYP December CTF</h3>
+            <li><span class="w3-opacity" >Capture the Flag Competition</span></li>
+          <li class="w3-padding-16">Network Security</li>
+          <li class="w3-padding-16">Malware Analysis</li>
+          <li class="w3-padding-16">Blue Team Operations</li>
+          <li class="w3-padding-16">Governance and Auditing</li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Explore</button>
+          </li>
+        </ul>
+      </div>
+       <div class="w3-third">
+        <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+        <li class="w3-grey w3-xlarge w3-padding-32">Soft Skills Project</li>
+                        <h3>InfoSec Club Website</h3>
+            <li><span class="w3-opacity" >Website + Blog</span></li>
+          <li class="w3-padding-16">Network Security</li>
+          <li class="w3-padding-16">Malware Analysis</li>
+          <li class="w3-padding-16">Blue Team Operations</li>
+          <li class="w3-padding-16">Governance and Auditing</li>
+          <li class="w3-light-grey w3-padding-24">
+            <button class="w3-button w3-white w3-padding-large w3-hover-black">Explore</button>
+          </li>
+        </ul>
+      </div>
+    <!-- End Grid/Pricing tables -->
+  <!-- End Portfolio Section -->
+  </div>
+
+  <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Singapore</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +65 XXXX X664</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: sendtomarkbosco@gmail.com</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" onclick="window.alert('Message recieved. Thank you.');" type="reset">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i  class="w3-medium">Web Design by Mark Bosco</i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
