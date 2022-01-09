@@ -21,7 +21,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;}
 
     display: none; /* for Chrome, Safari, and Opera */
     }
+    .caption {display:none;}
     
+img:hover + .caption {
+  display: block;
+}
+        .w3-display-middle{background-color: black;}
 </style>
 <body class="w3-black">
 
@@ -33,27 +38,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;}
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
   </a>
-  <a href="index.html#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="index.html#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-wrench w3-xxlarge"></i>
-    <p>PROJECTS</p>
-  </a>
-  <a href="index.html#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
 </nav>
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">PROJECTS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+    <a href="./index.html" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
   </div>
 </div>
 
@@ -63,58 +53,81 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;}
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo"><b>NYP InfoSec Club Website</b></h1>
     <p>Soft Skills Project</p>
-        <iframe src="https://nypinfosec.blogspot.com/" frameBorder="0" style="width:70vw;height:42vw;margin-top:30px;" ></iframe><br>
-      <a href="https://nypinfosec.blogspot.com/" class="w3-hover-text-green" style="font-size: 1.3em;">Live View! Click here to visit the website.</a>
+        <iframe src="https://nypinfosec.blogspot.com/p/about-us.html" frameBorder="0" style="width:70vw;height:42vw;margin-top:30px;" ></iframe><br>
+      <a href="https://nypinfosec.blogspot.com/" target="_blank" class="w3-hover-text-white" style="font-size: 1.3em;">Live view! You can interact directly with the content above, or click here to open in new tab.</a>
   </header>
+    
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+      
+          <div class="w3-third w3-display-container w3-margin-bottom">
+        <img src="./resources/blog_3.png"  style="width:100%" class="w3-hover-opacity">
+  <div class="w3-display-middle w3-container caption"><p class="" style="font-size: 1.7em;">Discord invite widget</p></div>
+      </div>
 
+      
+    <div class="w3-third w3-display-container w3-margin-bottom">
+        <img src="./resources/blog_1.png" style="width:100%" class="w3-hover-opacity">
+  <div class="w3-display-middle w3-container caption"><p class="" style="font-size: 1.7em;">Special menu bar for small screens</p></div>
+      </div>
+    <div class="w3-third w3-display-container w3-margin-bottom">
+        <img src="./resources/blog_2.png"  style="width:100%" class="w3-hover-opacity">
+  <div class="w3-display-middle w3-container caption"><p class="" style="font-size: 1.7em;">Link to our partners</p></div>
+      </div>
+    
+  </div>
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="about">
     <h2 class="w3-text-light-grey">Project Scope</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>Despite being founded in 2017, NYP's InfoSecurity Club had no public-facing website. As the club's Head of Development, I volunteered to supervise the creation of a club website.<br>My main goal</p>
+    <p>In late 2021, Nanyang Polytechnic's InfoSecurity Club (known as NYP InfoSec) had nearly a hundred members, most of whom were fellow students in IT-related Diplomas. The Executive Committee members agreed that it was time expand further, perhaps to the rest of the school. A key step would be setting up a public website.<br><br>
+Our main goal was for a website that would introduce the club, highlight our events, and encourage new members to sign up. Eventually, we hoped that a visible online presence would also help us form meaningful partnerships with other like-minded organizations.
+</p>
+<hr style="width:200px" class="w3-opacity">
+      
+    <h2 class="w3-text-light-grey">My Role And Solution</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>At the time, I was the club's Head of Development. I volunteered to oversee the creation, launch, and initial upkeep of the website.<br>
+Since I would be starting from scratch. While working out code and content seemed a daunting task, the blank canvas turned out to be a great opportunity for me to recommend and implement several innovate ideas.<br><br>
+
+After exploring several web hosting options, I recommended building our website with Google's Blogger Content Management System. While it was less customizable than certain other options, Blogger was extremely easy to set up and run. Future committee members would also be able to update the website quickly. Most importantly, it was free, which meant no strain on our budget. 
+</p>
+<hr style="width:200px" class="w3-opacity">
+      
+    <h2 class="w3-text-light-grey">My Work Process</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Since I had used Blogger a few times before, I was able to quickly configure the website’s themes and layout. Then, I wrote most of the main content and gathered any missing information from other committee members. When I was satisfied with the website, I gave the other committee members access so they would also be able to make posts.<br><br>
+For some extra content, I came up with the idea of a special page with links to the club’s partners. I shared this idea with other tech-related clubs in the school and they appreciated the idea. Some even offered to do the same on their own websites!<br><br>
+A major obstacle during development was that the website templates from Blogger’s didn’t always scale well on smaller screen sizes, such as on a mobile screen. Fortunately, I knew enough coding to fix the templates. 
+</p>
+      
+<hr style="width:200px" class="w3-opacity">
+    <h2 class="w3-text-light-grey">Outcome and Results</h2>
+      
+    <hr style="width:200px" class="w3-opacity">
+    <p>We launched the website in December 2021, where it received more than 500 total views in the following month.<br><br>
+I continue to supervise a new post to the website for each event we organize. This helps us sustain participant engagement and build our reputation. These posts also give our publicity team new content to post on social media.
+</p>
 <hr style="width:200px" class="w3-opacity">
 
-    <h3 class="w3-padding-16 w3-text-light-grey">Skills and Knowledge</h3>
+    <h3 class="w3-padding-16 w3-text-light-grey">Skills Involved</h3>
     
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:30px;width:85%"><p class="w3-wide">&nbsp;Computer Programming</p></div>
+      <div class="w3-dark-grey" style="height:30px;width:60%"><p class="w3-wide">&nbsp;Web Design</p></div>
     </div>
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:30px;width:60%"><p class="w3-wide">&nbsp;Malware Analysis</p></div>
-    </div>
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:30px;width:80%"><p class="w3-wide">&nbsp;Database Security</p></div>
+      <div class="w3-dark-grey" style="height:30px;width:60%"><p class="w3-wide">&nbsp;Blogger configuration </p></div>
     </div>
 
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:30px;width:90%"><p class="w3-wide">&nbsp;Firewall Management</p></div>
+      <div class="w3-grey" style="height:30px;width:95%"><p class="w3-wide" style="color:black">&nbsp;Writing and Editing</p></div>
     </div>
 
     <div class="w3-white">
-      <div class="w3-grey" style="height:30px;width:99%"><p class="w3-wide" style="color:black">&nbsp;Writing</p></div>
-    </div>
-
-    <div class="w3-white">
-      <div class="w3-grey" style="height:30px;width:78%"><p class="w3-wide" style="color:black">&nbsp;Public Speaking</p></div>
-    </div><br>
-   
-
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
-        <i class="fa fa-download"></i><a href="/resources/Mark_200414X_Resume.pdf" download style="text-decoration:none;"> Download Resume</a>
-    </button>
-    
-  
-    </div>
-    <div class="w3-padding-64 w3-content" id="testimonial">
-    <!-- Testimonials -->
-    <h3 class="w3-padding-24 w3-text-light-grey">Testimonials</h3>  
-    <img src="./resources/Joseph_Testimonial.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Joseph Poon.</span> Former Colleague</p><br>
-    <p>"Mark is probably one of the sharpest people in the field of cybersecurity.<br>He shows initiative when seeking out new skills and learning opportunities."</p><br>
-    
-    <img src="./resources/Aden_Testimonial.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><span class="w3-large w3-margin-right">Aden Seow.</span> Former Colleague</p><br>
-    <p>"Mark is a hardworking, commendable person. He is very knowledgeable and will always do his best for all assigned tasks. He is also a responsible and caring team leader, who will always check on his team members' progress and willing to offer his help should they encounter any difficulties.<br>Working with Mark on several projects has always been a pleasure."</p>
+      <div class="w3-grey" style="height:30px;width:75%"><p class="w3-wide" style="color:black">&nbsp;Communication</p></div>
+    </div><br><br>
+    <a href="./index.html" class="w3-hover-text-white" style="font-size: 1.3em;color:white;">Back to homepage</a>
+        
   <!-- End About Section -->
   </div>
   

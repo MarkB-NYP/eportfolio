@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>NYP December CTF</title>
+<title>Snippet Writer</title>
     <link rel="icon" type="image/x-icon" href="./resources/MBFavicon.png">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,13 +21,12 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif;}
 
     display: none; /* for Chrome, Safari, and Opera */
     }
-    .caption {display:none;
-   }
+    .caption {display:none;}
     
 img:hover + .caption {
   display: block;
 }
-    .w3-display-middle{background-color: black;}
+        .w3-display-middle{background-color: black;}
 </style>
 <body class="w3-black">
 
@@ -52,30 +51,28 @@ img:hover + .caption {
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><b>NYP December CTF</b></h1>
+    <h1 class="w3-jumbo"><b>Snippet Writer</b></h1>
     <p>Technical Project</p>
- <video controls autoplay loop style="width:70vw;height:42vw;margin-top:30px;">
-  <source src="./resources/DecCTFVideo.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+        <iframe src="https://markb-nyp.github.io/snippetwriter/" frameBorder="0" style="width:70vw;height:42vw;margin-top:30px;" ></iframe><br>
+      <a href="https://markb-nyp.github.io/snippetwriter/" target="_blank" class="w3-hover-text-white" style="font-size: 1.3em;">Live view! You can interact directly with the content above, or click here to open in new tab.</a>
   </header>
     
   <!-- First Photo Grid-->
   <div class="w3-row-padding">
       
           <div class="w3-third w3-display-container w3-margin-bottom">
-        <img src="./resources/CTF_1.png"  style="width:100%" class="w3-hover-opacity">
-  <div class="w3-display-middle w3-container caption"><p class="" style="font-size: 1.7em; ">EternalWinter Logo</p></div>
+        <img src="./resources/writer_1.png"  style="width:100%" class="w3-hover-opacity">
+  <div class="w3-display-middle w3-container caption"><p class="" style="font-size: 1.7em;">Copy messages to any app</p></div>
       </div>
 
       
     <div class="w3-third w3-display-container w3-margin-bottom">
-        <img src="./resources/CTF_2.png" style="width:100%" class="w3-hover-opacity">
-  <div class="w3-display-middle w3-container caption"><p class="" style="font-size: 1.7em;">Title slide from my presentation</p></div>
+        <img src="./resources/writer_2.png" style="width:100%" class="w3-hover-opacity">
+  <div class="w3-display-middle w3-container caption"><p class="" style="font-size: 1.7em;">Animated smiley keeps you company while you write</p></div>
       </div>
     <div class="w3-third w3-display-container w3-margin-bottom">
-        <img src="./resources/CTF_3.png"  style="width:100%" class="w3-hover-opacity">
-  <div class="w3-display-middle w3-container caption"><p class="" style="font-size: 1.7em;">Cisco PacketTracer Virtual Network</p></div>
+        <img src="./resources/writer_3.png"  style="width:100%" class="w3-hover-opacity">
+  <div class="w3-display-middle w3-container caption"><p class="" style="font-size: 1.7em;">An early prototype</p></div>
       </div>
     
   </div>
@@ -83,55 +80,51 @@ img:hover + .caption {
   <div class="w3-content w3-justify w3-text-grey w3-padding-16" id="about">
     <h2 class="w3-text-light-grey">Project Scope</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>For the 2021 December holidays, Nanyang Polytechnic's InfoSecurity club (NYP InfoSec) organized our own Capture-The-Flag (CTF) competition. CTFs are a fun and exciting way to practice our various cybersecurity skills, from coding to cryptography.<br><br>
-As the club's Head of Development, I came up with event's scenario and theme, as well as coordinated the creation of a few key challenges.
-
+    <p>During the September holidays in 2020, I was looking for a way to practice the web design and Javascript coding skills I learnt during my first semester at Nanyang Polytechnic.<br><br>
+Snipptet Writer (originally called Smiley Writer) is a fun minimalist text editor that only allows you to write 50 words. It's for drafting short messages or making notes.
 </p>
 <hr style="width:200px" class="w3-opacity">
       
     <h2 class="w3-text-light-grey">My Role And Solution</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>Since the event would be held at the end of the year, I created a fictional storyline where a hacker group known as EternalWinter takes control of a weather-control machine and starts sending threats to different governments. I pitched the scenario to the committee members, who were all enthusiastic about the idea.<br><br>
-The shared scenario helped the committee brainstorm possible challenge ideas and helped all our challenges appear part of a bigger mission.
-
+    <p>This was a personal project, so I did all design and coding myself.<br><br>
+For faster loading speeds and extra security, Snippet Writer runs entirely in the user's browser.
+Instead of saving of saving output to a text file or in the cloud, I chose to allow the user to copy text to their device's clipboard so they can paste it into the messaging app of their choice. <br><br>This is especially useful on mobile devices, and was also much easier to implement.
 </p>
 <hr style="width:200px" class="w3-opacity">
       
     <h2 class="w3-text-light-grey">My Work Process</h2>
     <hr style="width:200px" class="w3-opacity">
-    <p>First, I designed a document with information about the scenario as well as some custom that graphics I created. I shared this with everyone working on the event so we would all be on the same page.<br><br>
-During the challenge creation process, I collaborated with several skilled committee members to develop a special set of cross-discipline challenges. Drawing on each of our interests, these challenges included analyzing a PDF file for a hidden program, hacking into a web server and taking control of a virtual network.<br><br>
-Finally, I supervised the creation of the competition landing page (as seen in the video above). This vibrant website used plenty of web design tricks and helped us get a few more last-minute sign-ups.
-
+    <p>I started by drawing a wireframe of the app. Then, I created a few different prototypes with slightly different fonts, layouts and features. I used them all for a week, then picked the version that I felt was the most comfortable to use.<br><br>
+At the time, I was a beginner to Javascript programming. It took me a few afternoons to get all the code and animations right, but I had fun!
 </p>
       
 <hr style="width:200px" class="w3-opacity">
     <h2 class="w3-text-light-grey">Outcome and Results</h2>
       
     <hr style="width:200px" class="w3-opacity">
-    <p>In total, the club was able to create more than 50 challenges for the event. We had close to 60 participants over the two-day event, with an overwhelming majority of participants mentioning<br> that they would like to attend a similar event in the future.<br>
-Many also appreciated the scenario’s story and design.<br><br>
-After the event, I wrote a post for the club’s website. You can view it <a href="https://nypinfosec.blogspot.com/2021/12/nyp-december-ctf-27-12-2021-to-28-12.html" target="_blank" class="w3-hover-text-white" style="font-size: 1.0;">here.</a>
-
+    <p>
+For a long time, I used Snippet Writer as an offline HTML file. I shared a few copies of the code with my family and received positive feedback.<br><br>
+Recently I discovering GitHub Pages, and I decided to host the code online that anyone can use Snippet Writer anywhere.<br>I hope to keep working on the project and share it with even more people in the future.
 </p>
 <hr style="width:200px" class="w3-opacity">
 
     <h3 class="w3-padding-16 w3-text-light-grey">Skills Involved</h3>
-
+    
     <div class="w3-white">
-      <div class="w3-dark-grey" style="height:30px;width:75%"><p class="w3-wide">&nbsp;Graphic Design </p></div>
-    </div>
-
-    <div class="w3-white">
-      <div class="w3-dark-grey" style="height:30px;width:80%"><p class="w3-wide" style="color:white">&nbsp;Programming and Coding</p></div>
+      <div class="w3-dark-grey" style="height:30px;width:90%"><p class="w3-wide">&nbsp;CSS</p></div>
     </div>
     <div class="w3-white">
-      <div class="w3-grey" style="height:30px;width:60%"><p class="w3-wide" style="color:black">&nbsp;Pitching</p></div>
+      <div class="w3-dark-grey" style="height:30px;width:95%"><p class="w3-wide">&nbsp;Javascript Coding</p></div>
+    </div>
+    <div class="w3-white">
+      <div class="w3-dark-grey" style="height:30px;width:80%"><p class="w3-wide" style="color:white">&nbsp;Hosting</p></div>
       </div>
     <div class="w3-white">
-      <div class="w3-grey" style="height:30px;width:75%"><p class="w3-wide" style="color:black">&nbsp;Creativity</p></div>
-        </div>
-    </div><br><br>
+      <div class="w3-grey" style="height:30px;width:50%"><p class="w3-wide" style="color:black">&nbsp;Prototyping and Testing</p></div>
+    </div>
+<br><br>
+  
     <a href="./index.html" class="w3-hover-text-white" style="font-size: 1.3em;color:white;">Back to homepage</a>
         
   <!-- End About Section -->
